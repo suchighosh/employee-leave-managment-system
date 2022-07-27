@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login</title>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="login-style.css">
+	<script src="https://kit.fontawesome.com/e7a70a44f9.js" crossorigin="anonymous"></script>
+	<script>
+       function validateForm() {
+       var x = document.forms["myForm"]["fname"].value;
+       if (x == "") {
+         alert("Email must be filled out");
+         return false;
+        }
+    }
+</script>
+</head>
+<body>
+	<form class="log" onsubmit="return validateForm()" name="myForm" method="post">
+		<div class="sec1">
+			<img src="loginpic.jpg">
+		</div>
+		<div class="sec2">
+		  <h1>Login</h1>
+		  <br>
+		  <div class="mail">
+			 <i class="fas fa-user"></i>
+		     <input type="text" name="fname" placeholder="E-mail" id="email">
+		  </div>
+		  <br>
+		 <div class="password">
+		    	<i class="fas fa-lock"></i>
+		       <input type="password" name="pass" placeholder="Password" id="password">
+		 </div>
+		 <br>
+		 <button class="btn" type="submit">SignIn</button>
+		</div>
+		<h3 class="cross"><a href="index.html">x</a></h3>
+	</form>
+</body>
+</html>
